@@ -43,7 +43,6 @@ public class DeskMsgActivity extends AppCompatActivity {
         public void run() {
             int tempNUm = mBadgeCount++;
             mShowBadge.setText("当前未读消息为：" + tempNUm);
-            Log.e("Love", "当前未读消息为：" + tempNUm);
             if (Build.MANUFACTURER.equalsIgnoreCase("xiaomi")) {
                 PackageManager pm = getPackageManager();
                 Intent launchIntent = getPackageManager().getLaunchIntentForPackage(packageName);
